@@ -404,6 +404,7 @@
 .wrapper-content .timeline ul li .info video {
   width: 557px;
   height: 396px;
+  border-radius: 6px;
 }
 
 .wrapper-content .timeline ul li .info strong span {
