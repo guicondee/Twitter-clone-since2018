@@ -429,12 +429,16 @@
   background: #fff;
   padding: 15px;
   height: 300px;
+   
   
 }
+
+ 
 
 .wrapper-content aside.widgets .widget .title {
   display: flex;
   align-items: baseline;
+  margin-bottom: 15px;
 }
 
 .wrapper-content aside.widgets .widget .title strong{
