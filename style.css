@@ -12,7 +12,7 @@
  }
 
  .content{
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
  }
 
@@ -280,7 +280,17 @@
   align-items: flex-start;
   
 }
-.wrapper-content aside.profile .followers ul li {
+/* .wrapper-content aside.profile .followers ul li {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #d0d5d9;
+  margin: 0 0 5px;
+  flex-shrink: 0;
+  flex-grow: 1;
+} */
+
+.wrapper-content aside.profile .followers ul li img{
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -298,8 +308,10 @@
   align-content: flex-start;
   align-items: flex-start;
   
-}
-.wrapper-content aside.profile .images ul li {
+} 
+
+.wrapper-content aside.profile .images ul li,
+ .wrapper-content aside.profile .images ul li img{
   width: 83px;
   height: 83px;
    border-radius: 10px;
@@ -313,12 +325,12 @@
 .wrapper-content .timeline{
   flex-grow: 1;
   background: #fff;
-  margin: 10px 20px 0;
+  margin: 10px 10px 0;
 }
 
 .wrapper-content .timeline nav{
   border-bottom: 1px solid #e6ecf0;
-  padding: 10px 15px;
+  padding: 10px 10px;
 }
 
 .wrapper-content .timeline nav a{
@@ -333,6 +345,77 @@
   color: #1f2226;
   margin: 0;
 }
+
+.wrapper-content .timeline ul{
+  list-style: none;
+}
+
+.wrapper-content .timeline ul li {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 10px;
+
+  display: flex;
+}
+
+.wrapper-content .timeline ul li .avatarM {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+ 
+
+.wrapper-content .timeline ul li .actions{
+  display: flex;
+   
+}
+
+.wrapper-content .timeline ul li .actions a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  color: #667580;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.wrapper-content .timeline ul li .actions a:first-child {
+  margin-left: 0;
+}
+
+.wrapper-content .timeline ul li .actions a img {
+  margin-right: 5px;
+}
+
+.wrapper-content .timeline ul li .info {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper-content .timeline ul li .info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+.wrapper-content .timeline ul li .info video {
+  width: 557px;
+  height: 396px;
+}
+
+.wrapper-content .timeline ul li .info strong span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #7b8b9a;
+}
+
+.wrapper-content .timeline ul li .info .meme {
+  border-radius: 6px;
+}
+
 
 /* ASIDE LADO DIREITO */
 .wrapper-content aside.widgets {
